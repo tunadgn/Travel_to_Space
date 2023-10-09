@@ -1,0 +1,15 @@
+body {
+    background-image: url(img/gp.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top-left;
+    background-size: 1280px 2400px;
+    }
+    #baslik {
+        text-align: center;
+    }
+    #metin {margin-right: 45ex;
+        margin-left: 45ex;
+        text-align: justify;
+        
+    }

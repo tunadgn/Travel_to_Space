@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    	<title>uzaX</title>
+    
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="left-side">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="UzaX">
+                        </div>
+                        <div class="tabs-content">
+                            <h4>UZAX TEK FİYAT BOL AVANTAJ</h4>
+                            <ul class="social-links">
+                                <li><a href="https://www.facebook.com/spacenewsx/">Bizi takip edin <em>Facebook</em><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.youtube.com/user/spacexchannel">Bizi takip edin <em>YouTube</em><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/spacex/?hl=tr">Bizi takip edin <em>instagram</em><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="page-direction-button">
+                            <a href="contact.html"><i class="fa fa-phone"></i>İletişime geç</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <h4>Size Uygun Planı Kontrol <em>Edin</em>:</h4>
+                                <form id="form-submit" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="from">LOKASYON:</label>
+                                                <select required name='from' >
+                                                    <option value="">İL SEÇİN...</option>
+                                                    <option value="Adana">ADANA</option>
+                                                    <option value="Ankara">ANKARA</option>
+                                                    <option value="Bayburt">BAYBURT</option>
+                                                    <option value="Diyarbakır">DİYARBAKIR</option>
+                                                    <option value="Hatay">HATAY</option>
+                                                    <option value="İstanbul">İSTANBUL</option>
+                                                    <option value="İzmir">İZMİR</option>
+                                                    <option value="Muş">MUŞ</option>
+                                                    <option value="Yalova">YALOVA</option>
+                                                    <option value="Yozgat">YOZGAT</option>
+                                                    <option value="Zonguldak">ZONGULDAK</option>
+
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to">Hangi Gezegen:</label>
+                                                <select required name='to' >
+                                                    <option value="">Gezegen Lokasyonu...</option>
+                                                    <option value="Ceres">Ceres</option>
+                                                    <option value="Eris">Eris</option>
+                                                    <option value="Haumea">Haumea</option>
+                                                    <option value="Mars">Mars</option>
+                                                    <option value="Merkür">Merkür</option>
+                                                    <option value="Neptün">Neptün</option>
+                                                    <option value="Plüton">Plüton</option>
+                                                    <option value="Satürn">Satürn</option>
+                                                    <option value="Uranüs">Uranüs</option>
+                                                    <option value="Venüs">Venüs</option>
+
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure">Gidiş Tarihi:</label>
+                                                <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Tarih Seçiniz..." required="" >
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="return">Dönüş Tarihi:</label>
+                                                <input name="return" type="text" class="form-control date" id="return" placeholder="Tarih Seçiniz..." required="" >
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="radio-select">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="round">Çift Yön</label>
+                                                        <input type="radio" name="trip" id="round" value="round" required="required"onchange='this.form.()'>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="oneway">Tek Yön</label>
+                                                        <input type="radio" name="trip" id="oneway" value="one-way" required="required"onchange='this.form.()'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <button onclick="fonk1()" type="confirm" id="form-submit" class="btn">Bilet Bul</button>
+                                            </fieldset>
+                                            <script type="text/javascript">
+         
+                                                function fonk1()
+                                                {
+                                                  
+                                                    if (window.confirm('Seçtiğiniz tarihe uygun sefer bulundu devam etmek istiyormusunuz *******Ödeme sayfasına yönlendirileceksiniz ...*******'))
+                                                         {
+                                                            window.location.href = "odeme/index.html"
+                                                                }
+                                                                       else
+                                                                          {
+                                                                            window.location.href = "index.html"
+                                                                                          }
+                                                }
+                                                
+                                      </script>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="tabs-content" id="weather">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>5 Günlük Hava Tahmini</h2>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="col-md-12">
+                        <div class="weather-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="tabs clearfix" data-tabgroup="second-tab-group">
+                                        <li><a href="#Pazartesi" class="active">Pazartesi</a></li>
+                                        <li><a href="#Salı">Salı</a></li>
+                                        <li><a href="#Çarşamba">Çarşamba</a></li>
+                                        <li><a href="#Perşembe">Perşembe</a></li>
+                                        <li><a href="#Cuma">Cuma</a></li>
+                                    </ul>    
+                                </div>
+                                <div class="col-md-12">
+                                    <section id="second-tab-group" class="weathergroup">
+                                        <div id="Pazartesi">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Ankara</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>32&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>26&deg;</span></li>
+                                                            <li>12.00 <span>32&deg;</span></li>
+                                                            <li>18.00 <span>28&deg;</span></li>
+                                                            <li>00.00 <span>22&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>İstanbul</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>20&deg;</span></li>
+                                                            <li>12.00 <span>28&deg;</span></li>
+                                                            <li>18.00 <span>26&deg;</span></li>
+                                                            <li>00.00 <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Yozgat</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>33&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>26&deg;</span></li>
+                                                            <li>12.00 <span>33&deg;</span></li>
+                                                            <li>18.00 <span>29&deg;</span></li>
+                                                            <li>00.00 <span>27&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Salı">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Ankara</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>18&deg;</span></li>
+                                                            <li>12.00 <span>27&deg;</span></li>
+                                                            <li>18.00 <span>25&deg;</span></li>
+                                                            <li>00.00 <span>17&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>İstanbul</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>19&deg;</span></li>
+                                                            <li>12PM <span>28&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Yozgat</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>26&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>19&deg;</span></li>
+                                                            <li>12PM <span>26&deg;</span></li>
+                                                            <li>6PM <span>22&deg;</span></li>
+                                                            <li>12AM <span>20&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Çarşamba">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Ankara</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>19&deg;</span></li>
+                                                            <li>12.00 <span>28&deg;</span></li>
+                                                            <li>18.00 <span>22&deg;</span></li>
+                                                            <li>00.00 <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>İstanbul</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>34&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>6AM <span>28&deg;</span></li>
+                                                            <li>12PM <span>34&deg;</span></li>
+                                                            <li>6PM <span>30&deg;</span></li>
+                                                            <li>12AM <span>29&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Yozgat</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>18&deg;</span></li>
+                                                            <li>12.00 <span>27&deg;</span></li>
+                                                            <li>18.00 <span>25&deg;</span></li>
+                                                            <li>00.00 <span>17&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Perşembe">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Ankara</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>27&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>21&deg;</span></li>
+                                                            <li>12.00 <span>27&deg;</span></li>
+                                                            <li>18.00 <span>22&deg;</span></li>
+                                                            <li>00.00 <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>İstanbul</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>18&deg;</span></li>
+                                                            <li>12.00 <span>27&deg;</span></li>
+                                                            <li>18.00 <span>25&deg;</span></li>
+                                                            <li>00.00 <span>17&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Yozgat</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>19&deg;</span></li>
+                                                            <li>12.00 <span>28&deg;</span></li>
+                                                            <li>18.00 <span>22&deg;</span></li>
+                                                            <li>00.00 <span>18&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Cuma">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Ankara</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-03.png" alt="">
+                                                        </div>
+                                                        <span>33&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>28&deg;</span></li>
+                                                            <li>12.00 <span>33&deg;</span></li>
+                                                            <li>18.00 <span>29&deg;</span></li>
+                                                            <li>00.00 <span>27&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>İstanbul</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-02.png" alt="">
+                                                        </div>
+                                                        <span>31&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>24&deg;</span></li>
+                                                            <li>12.00 <span>31&deg;</span></li>
+                                                            <li>18.00 <span>26&deg;</span></li>
+                                                            <li>00.00 <span>23&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+                                                        <h6>Yozgat</h6>
+                                                        <div class="weather-icon">
+                                                            <img src="img/weather-icon-01.png" alt="">
+                                                        </div>
+                                                        <span>28&deg;C</span>
+                                                        <ul class="time-weather">
+                                                            <li>06.00 <span>24&deg;</span></li>
+                                                            <li>12.00 <span>28&deg;</span></li>
+                                                            <li>18.00 <span>26&deg;</span></li>
+                                                            <li>00.00 <span>22&deg;</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item first-service">
+                        <div class="service-icon"></div>
+                        <h4>Teknik & Sağlık Bilgiler</h4>
+                        <p>Elektronik aygıtlarınızı uçak moduna alınız ve seyehat süresince uçak modunu aktif tutunuz ek olarak sağlık probleminiz var ise yetkiliye bildiriniz.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item second-service">
+                        <div class="service-icon"></div>
+                        <h4>Birkaç İpucu</h4>
+                        <p>Atmosfer dışınıa çıkış sırasında tam rahatlığınızdan emin olun ve derin nefes alıp verin böylece vücudu farklı ortama adapte aşamasını hızlandırırsınız.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item third-service">
+                        <div class="service-icon"></div>
+                        <h4>Bilgilendirme</h4>
+                        <p>Seyehat sırasında herhangi bir rahatsızlık olduğunda "Yardım" butonuna basınız sağlık ekiplerimiz size gerekli müdahale konusunda yardımcı olacaklardır.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <div class="tabs-content" id="recommended-hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Nelerden Faydalanacaksınız</h2>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="col-md-4">
+                            <ul class="tabs clearfix" data-tabgroup="third-tab-group">
+                                <li><a href="#livingroom" class="active">V.İ.P ARAÇ HİZMETİ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#suitroom">AÇIK BÜFE HİZMETİ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#swimingpool">7/24 SAĞLIK HİZMETİ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#massage">MASAJ HİZMETİ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#fitness">10 GÜN GEZEGEN TURU <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#event">BARINMA HİZMETİ <i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <section id="third-tab-group" class="recommendedgroup">
+                            <div id="livingroom">
+                                <div class="text-content">
+                                    <video width="100%" height="400px" controls>
+
+                                        <source src="img\video\car.mp4#t=05,01,32" type="video/mp4">
+                                        
+                                        <video>
+                                 
+                                </div>
+                            </div>
+                            <div id="suitroom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="owl-suiteroom" class="owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="suiteroom-item">
+                                                    <img src="img/suite-02.jpg" alt="">
+                                                    <div class="text-content">
+                                                        <h4>Doğallığı Yeniden Keşfedin</h4>
+                                                        <span>Eşsiz, Doğal ve Sağlıklı</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="suiteroom-item">
+                                                    <img src="img/suite-01.jpg" alt="">
+                                                    <div class="text-content">
+                                                        <h4>Kahvaltınız ve Gündelik Enerjiniz Burada</h4>
+                                                        <span>Her sabah bekleriz</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="suiteroom-item">
+                                                    <img src="img/suite-03.jpg" alt="">
+                                                    <div class="text-content">
+                                                        <h4>Tatlı Yiyelim Planları Konuşalım</h4>
+                                                        <span>İstediğiniz her tat burda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="swimingpool">
+                                <img src="img/swiming-pool.jpg" alt="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <h4>Alanında Uzman Sağlık Çalışanlarımız</h4>
+                                            <span>Destek ve bilgilendirme eksiğiniz olmasın</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="massage">
+                                <img src="img/massage-service.jpg" alt="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <h4>Masaj Tekniklerimizi Keşfedin</h4>
+                                            <span>tamamen Sertifikalı, Uzman Masörler</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fitness">
+                                <img src="img/fitness-service.jpg" alt="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <h4>10 Gün Boyunca Unutamayacağınız Bir Tatil</h4>
+                                            <span>Farkınızı Ortaya Koyun</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="event">
+                                <img src="img/evening-event.jpg" alt="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-content">
+                                            <h4>Tüm Günün Yorgunluğu Burada Biter</h4>
+                                            <span>Yüksek Kalite ve Tasarımın Buluştuğu Yer "Evet" Odanız</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section id="most-visited">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Son Ziyaretler</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="owl-mostvisited" class="owl-carousel owl-theme">
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-01.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Ötüken</h4>
+                                    <span>Uranüs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-02.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Malazgirt</h4>
+                                    <span>Neptün</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-03.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Gray Wolf</h4>
+                                    <span>Mars</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-04.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Ottoman's</h4>
+                                    <span>Eris</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-05.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Moon Star</h4>
+                                    <span>Merkür</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-06.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Socialist Zone</h4>
+                                    <span>Haumea</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-07.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Kreuzberg</h4>
+                                    <span>Venüs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-08.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Bozok</h4>
+                                    <span>Satürn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-09.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Plüton Cumh.</h4>
+                                    <span>Plüton</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-md-12">
+                            <div class="visited-item">
+                                <img src="img/place-10.jpg" alt="">
+                                <div class="text-content">
+                                    <h4>Türkistan</h4>
+                                    <span>Ceres</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Başa Dön</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/spacenewsx/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://tr.linkedin.com/company/spacex"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.nasa.gov/content/nasa-rss-feeds"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="https://www.cameroncounty.us/spacex/"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <p>Tüm Hakları Saklıdır. &copy; Space X alt kuruluşudur.
+                
+                | Tasarım: <a href="https://t.me/myakupakdmr" target="_parent"><em>M.Y.Akdemir</em></a></p>
+                </div>
+                
+               
+
+
+            </div>
+        </div>
+        <div class="bilgiler">
+            <a href="vzyn.html" target="_parent" style="color:#ffffff;">Vizyonumuz</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="msyn.html" target="_parent" style="color:#ffffff;">Misyonumuz</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="gp.html" target="_parent" style="color:#ffffff;">Gizlilik Politikası</a> 
+        </div>
+    </footer>
+
+
+    
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        
+
+     
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
